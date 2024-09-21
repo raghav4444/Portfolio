@@ -5,6 +5,7 @@
 }
 
 body {
+  font-size: 10px;
   width: 100%;
   max-width: 1400px;
   display: block;
@@ -12,6 +13,7 @@ body {
   min-height: 100vh;
   background: #191919;
   font-family: sans-serif;
+  overflow-x: hidden;
 }
 .container {
   width: 100%;
@@ -28,6 +30,25 @@ body {
   align-items: center;
   z-index: 9;
   background: #1a1a1a;
+}
+/* MOBILE NAVIGATION */
+
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 .link-group {
@@ -98,9 +119,12 @@ body {
   font-family: sans-serif;
   text-transform: capitalize;
   font-weight: 700;
-  z-index: 2;
+  z-index: 999;
 }
 
+.hero-image {
+  z-index: -1;
+}
 .home-img {
   position: absolute;
   top: 0;
@@ -227,6 +251,7 @@ body {
   background: #000;
   color: #fff;
   cursor: pointer;
+  border-radius: 6px;
 }
 
 .project-btn.live {
@@ -336,6 +361,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 100px;
   color: #fff;
+  overflow: 0;
 }
 
 .skill-card {

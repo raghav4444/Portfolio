@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <script src="js/script.js"></script>
   </head>
   <body>
     <!-- navbar -->
-    <div class="container">
+    <div class="header">
       <nav class="navbar">
         <ul class="link-group">
           <li class="link active"><a href="#">home</a></li>
@@ -22,16 +22,25 @@
           <li class="link"><a href="#contact">contact</a></li>
         </ul>
       </nav>
+
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </div>
 
     <!-- home section -->
     <div class="container-1">
       <section class="home-section active">
-        <h1 class="hero-heading">
-          hello, i'am <br />
-          Raghvendra
-        </h1>
-        <img src="img/raghav.webp" class="home-img" alt="" />
+        <div class="hero-headings">
+          <h1 class="hero-heading">
+            hello, i'am <br />
+            Raghvendra
+          </h1>
+        </div>
+        <div class="hero-image">
+          <img src="img/raghav.webp" class="home-img" alt="" />
+        </div>
       </section>
     </div>
 
@@ -46,8 +55,7 @@
               <h1 class="project-title">project 01</h1>
               <p class="project-info">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Impedit vitae delectus cumque repudiandae aliquam optio
-                accusamus natus nobis! Nam, sunt?
+                Impedit vitae delectus cumque.
               </p>
               <div class="project-btn-grp">
                 <button class="project-btn github">github repo</button>
@@ -61,8 +69,7 @@
               <h1 class="project-title">project 02</h1>
               <p class="project-info">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Impedit vitae delectus cumque repudiandae aliquam optio
-                accusamus natus nobis! Nam, sunt?
+                Impedit vitae delectus.
               </p>
               <div class="project-btn-grp">
                 <button class="project-btn github">github repo</button>
@@ -76,8 +83,7 @@
               <h1 class="project-title">project 03</h1>
               <p class="project-info">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Impedit vitae delectus cumque repudiandae aliquam optio
-                accusamus natus nobis! Nam, sunt?
+                Impedit vitae delectus cumque.
               </p>
               <div class="project-btn-grp">
                 <button class="project-btn github">github repo</button>
@@ -91,8 +97,7 @@
               <h1 class="project-title">project 04</h1>
               <p class="project-info">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Impedit vitae delectus cumque repudiandae aliquam optio
-                accusamus natus nobis! Nam, sunt?
+                Impedit vitae delectus cumque.
               </p>
               <div class="project-btn-grp">
                 <button class="project-btn github">github repo</button>
@@ -105,28 +110,31 @@
     </div>
 
     <!-- about section -->
-    <div class="container">
+    <div class="container-2">
       <section class="about-section active" id="about">
         <div class="about">
           <div class="about-img-container">
             <img src="img/Resume 1 (1).png" class="about-img" alt="" />
             <button class="download-cv-btn">downlaod cv</button>
           </div>
-          <p class="about-info">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
-            accusantium dignissimos eius provident maxime alias nobis, enim
-            quidem optio nihil vero culpa magnam quia cupiditate fugit placeat
-            corrupti architecto dolorum Lorem ipsum dolor, sit amet consectetur
-            adipisicing elit. A natus cumque, nisi tempora nesciunt magni
-            commodi laborum, id, harum et aut deleniti voluptatibus repudiandae
-            ullam delectus! Asperiores accusantium vero hic..
-          </p>
+          <div class="about-text-container">
+            <p class="about-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+              accusantium dignissimos eius provident maxime alias nobis, enim
+              quidem optio nihil vero culpa magnam quia cupiditate fugit placeat
+              corrupti architecto dolorum Lorem ipsum dolor, sit amet
+              consectetur adipisicing elit. A natus cumque, nisi tempora
+              nesciunt magni commodi laborum, id, harum et aut deleniti
+              voluptatibus repudiandae ullam delectus! Asperiores accusantium
+              vero hic..
+            </p>
+          </div>
         </div>
       </section>
     </div>
 
     <!-- skills -->
-    <div class="container">
+    <div class="container-3">
       <div class="skill-section">
         <h1 class="heading">skills</h1>
         <div class="skills-container">
@@ -159,17 +167,17 @@
           </div>
           <div class="skill-card">
             <img src="img/c++.png" class="skill-img" alt="" />
-            <div class="skill-level">75%</div>
-            <h1 class="skill-name">Python</h1>
+            <div class="skill-level">92%</div>
+            <h1 class="skill-name">C++</h1>
             <p class="skill-info">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Consequatur, delectus!
             </p>
           </div>
           <div class="skill-card">
-            <img src="img/c.png" class="skill-img" alt="" />
-            <div class="skill-level">92%</div>
-            <h1 class="skill-name">C++</h1>
+            <img src="img/c.png" class="skill-img c" alt="" />
+            <div class="skill-level">75%</div>
+            <h1 class="skill-name">Python</h1>
             <p class="skill-info">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit.
               Consequatur, delectus!
@@ -249,29 +257,31 @@
     <!-- contact section -->
     <div class="container">
       <section class="contact-section active" id="contact">
-        <form class="contact-form">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            autocomplete="off"
-            placeholder="name"
-          />
-          <input
-            type="text"
-            name="email"
-            id="email"
-            autocomplete="off"
-            placeholder="email"
-          />
-          <textarea
-            name="msg"
-            id="msg"
-            placeholder="message"
-            autocomplete="off"
-          ></textarea>
-          <button type="submit" class="form-submit-btn">contact</button>
-        </form>
+        <div class="form">
+          <form class="contact-form">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              autocomplete="off"
+              placeholder="name"
+            />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              autocomplete="off"
+              placeholder="email"
+            />
+            <textarea
+              name="msg"
+              id="msg"
+              placeholder="message"
+              autocomplete="off"
+            ></textarea>
+            <button type="submit" class="form-submit-btn">contact</button>
+          </form>
+        </div>
         <!-- map -->
         <div class="map">
           <iframe
@@ -281,6 +291,7 @@
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
+            class="maps"
           ></iframe>
         </div>
       </section>
