@@ -340,6 +340,14 @@ body {
 
 .skill-card {
   position: relative;
+  overflow: 0;
+}
+
+.skill-card:hover {
+  position: relative;
+  box-shadow: 0 0 20px 0 white;
+  border-radius: 12px;
+  border: 2px solid white;
 }
 
 .skill-img {
