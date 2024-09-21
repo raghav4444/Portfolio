@@ -104,8 +104,9 @@
 @media (max-width: 37em) {
   body {
     font-size: 7px;
+    overflow-x: hidden;
   }
-  .navbar {
+  /* .navbar {
     display: flex;
     justify-content: none;
     background-color: rgba(255, 255, 255, 0.5);
@@ -124,19 +125,19 @@
     justify-content: center;
     transition: all 0.5s ease-in;
     /* HIDE THE NAVIGATION */
-    /* Allows no transition at all */
-    /* display: none; */
+  /* Allows no transition at all */
+  /* display: none; */
 
-    /* 1. hide the element visuallly */
-    opacity: 0;
+  /* 1. hide the element visuallly */
+  /* opacity: 0; */
 
-    /* 2. make it unnassible to mouse and keyboard */
-    pointer-events: none;
+  /* 2. make it unnassible to mouse and keyboard */
+  /* pointer-events: none; */
 
-    /* 3. hide it from screen reader */
-    visibility: hidden;
-  }
-  .nav-open .main-nav {
+  /* 3. hide it from screen reader */
+  /* visibility: hidden; */
+
+  /* .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
@@ -156,6 +157,20 @@
   .limk:link,
   .link:visited {
     font-size: 3rem;
+  }
+  */
+  .navbar {
+    height: 4.5rem;
+  }
+  .link a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    margin: 0 5px;
+    line-height: 80px;
+    transition: 0.3s;
+    font-size: 20px;
   }
   .hero-headings {
     display: flex;
@@ -214,7 +229,7 @@
     justify-content: space-around;
   }
   .skill-card {
-    width: 200px;
+    width: 180px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -236,17 +251,18 @@
   } */
 
   .skill-img {
-    height: 150px;
+    height: 120px;
   }
   .skill-level {
     position: absolute;
     top: 80px;
     right: 15%;
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
   }
 
   .contact-section {
+    padding: 100px 20px;
     display: flex;
     flex-direction: column;
   }
@@ -258,14 +274,10 @@
     width: 100%;
     padding: 0;
   }
-  .map {
+  /* .map {
     order: 1;
     width: 100%;
-    height: 100%;
+    height: 200%;
     padding: 0;
-  }
-  .maps {
-    width: 600px;
-    height: auto;
-  }
+  } */
 }
