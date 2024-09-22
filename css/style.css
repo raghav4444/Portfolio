@@ -7,39 +7,21 @@
 body {
   font-size: 10px;
   width: 100%;
+  max-width: 1400px;
   display: block;
+  margin: auto;
   min-height: 100vh;
   background: #191919;
   font-family: sans-serif;
   overflow-x: hidden;
 }
-
-.home-section,
-.about-section,
-.timeline,
-.contact-section,
-.skill-section,
-.container-3,
-.project-section {
-  max-width: 1400px;
-  margin: auto;
-}
 .container {
   width: 100%;
 }
-.header {
-  position: relative;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 100%;
-  padding: 0;
-  /* Because we want header  to be sticky */
-}
 
 .navbar {
-  /* max-width: 100vh; */
-  position: fixed;
   width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -49,17 +31,20 @@ body {
   z-index: 9;
   background: #1a1a1a;
 }
-.sticky .header {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 8rem;
-  padding-top: 0;
-  padding-bottom: 0;
-  /* background-color: rgba(255, 255, 255, 0.97); */
-  z-index: 999;
-  /* box-shadow: 1 1.2rem 3.2rem rgba(0, 0, 0, 0.05); */
+/* MOBILE NAVIGATION */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #fff;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 .link-group {
@@ -140,7 +125,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  height: 100%;
+  height: 100vh;
   width: 50%;
   object-fit: cover;
   opacity: 0.9;
@@ -458,6 +443,7 @@ body {
   display: block;
   width: 80%;
   margin: 150px auto;
+  padding: 30px;
 }
 
 .timeline .heading {
