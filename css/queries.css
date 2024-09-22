@@ -104,7 +104,6 @@
 @media (max-width: 37em) {
   body {
     font-size: 7px;
-    overflow-x: hidden;
     background: linear-gradient(
       300deg,
       rgba(5, 3, 41, 0.821),
@@ -112,8 +111,8 @@
       rgba(49, 0, 0, 0.971),
       rgba(3, 8, 51, 0.847)
     );
-    background-size: 180% 180%;
-    animation: gradient-animation 5s ease infinite;
+    background-size: 100% 100%;
+    animation: gradient-animation 3s ease-in-out infinite;
   }
   @keyframes gradient-animation {
     0% {
@@ -196,6 +195,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 200px;
   }
   .hero-heading {
     width: 20rem;
@@ -210,21 +210,26 @@
     justify-self: center;
     border-radius: 12px;
   }
+  .project-card {
+    width: 100%;
+  }
+
   .project-container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr;
+    width: 100%;
   }
   .project-heading {
     font-size: 3rem;
   }
   .project-title {
-    font-size: 50px;
+    font-size: 35px;
     text-transform: capitalize;
     text-align: center;
     font-weight: 300;
   }
   .project-info {
     margin: 2rem auto;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 30px;
     text-align: center;
     width: 100%;
