@@ -105,6 +105,26 @@
   body {
     font-size: 7px;
     overflow-x: hidden;
+    background: linear-gradient(
+      300deg,
+      rgba(5, 3, 41, 0.821),
+      rgba(15, 5, 44, 0.366),
+      rgba(49, 0, 0, 0.971),
+      rgba(3, 8, 51, 0.847)
+    );
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
   }
   /* .navbar {
     display: flex;
@@ -188,6 +208,7 @@
   .home-img {
     height: 35rem;
     justify-self: center;
+    border-radius: 12px;
   }
   .project-container {
     grid-template-columns: 1fr;
@@ -202,10 +223,14 @@
     font-weight: 300;
   }
   .project-info {
-    margin: 2rem;
+    margin: 2rem auto;
     font-size: 20px;
     line-height: 30px;
     text-align: center;
+    width: 100%;
+  }
+  .about-img {
+    width: 400px;
   }
   .about-section {
     border-top: 2px solid white;
@@ -215,6 +240,7 @@
   .about {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .about-info {
     width: 100%;
