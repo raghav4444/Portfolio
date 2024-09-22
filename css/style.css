@@ -7,16 +7,32 @@
 body {
   font-size: 10px;
   width: 100%;
-  max-width: 1400px;
   display: block;
-  margin: auto;
-  min-height: 100vh;
   background: #191919;
   font-family: sans-serif;
   overflow-x: hidden;
 }
+.home-section,
+.about-section,
+.timeline,
+.contact-section,
+.skill-section,
+.container-3,
+.project-section,
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
 .container {
   width: 100%;
+}
+.header {
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 0;
+  /* Because we want header  to be sticky */
 }
 
 .navbar {
@@ -440,7 +456,7 @@ body {
   border-radius: 10px;
   color: #fff;
   display: block;
-  margin: -80px 0;
+  /* margin: -80px 0; */
   position: relative;
   background: #f00;
 }
