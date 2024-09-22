@@ -8,30 +8,19 @@ body {
   font-size: 10px;
   width: 100%;
   display: block;
-<<<<<<< HEAD
-=======
   min-height: 100vh;
->>>>>>> d9a29e87959d0c19bb2aaca1f79172becb353ef7
   background: #191919;
   font-family: sans-serif;
   overflow-x: hidden;
 }
-<<<<<<< HEAD
-=======
 
->>>>>>> d9a29e87959d0c19bb2aaca1f79172becb353ef7
 .home-section,
 .about-section,
 .timeline,
 .contact-section,
 .skill-section,
 .container-3,
-<<<<<<< HEAD
-.project-section,
-.container {
-=======
 .project-section {
->>>>>>> d9a29e87959d0c19bb2aaca1f79172becb353ef7
   max-width: 1400px;
   margin: auto;
 }
