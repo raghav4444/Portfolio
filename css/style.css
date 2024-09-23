@@ -271,6 +271,7 @@ body {
 }
 
 .project-card:hover .project-img {
+  overflow: hidden;
   filter: blur(20px);
 }
 
@@ -370,6 +371,7 @@ body {
   box-shadow: 0 0 20px 0 white;
   border-radius: 12px;
   border: 2px solid white;
+  overflow: hidden;
 }
 
 .skill-img {
