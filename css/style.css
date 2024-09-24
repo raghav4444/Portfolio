@@ -362,6 +362,8 @@ body {
 }
 
 .skill-card {
+  border: 2px solid transparent;
+  width: 100%;
   position: relative;
   overflow: 0;
 }
@@ -370,7 +372,9 @@ body {
   position: relative;
   box-shadow: 0 0 20px 0 white;
   border-radius: 12px;
-  border: 2px solid white;
+  /* border: 2px solid white; */
+  transition: all 0.2s;
+  border-color: white;
   overflow: hidden;
 }
 
